@@ -44,6 +44,8 @@ li {
 .header {
   position: relative;
   background: transparent;
+  width: 100vw;
+  height: 100vh;
 }
 .header__container {
   padding: 20px;
@@ -84,7 +86,6 @@ li {
 }
 
 .banner {
-  min-height: 100vh;
   background: url(../images/281711c8e933e746f894b4b60304cab7.jfif) center center no-repeat;
   background-size: cover;
   position: absolute;

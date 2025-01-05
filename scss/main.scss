@@ -38,6 +38,8 @@ li {
 .header {
   position: relative;
   background: transparent;
+  width: 100vw;
+  height: 100vh;
   &__container {
     padding: 20px;
     display: flex;
@@ -90,7 +92,6 @@ li {
 }
 // ----------------banner--------------------
 .banner {
-  min-height: 100vh;
   background: url(../images/281711c8e933e746f894b4b60304cab7.jfif) center center
     no-repeat;
   background-size: cover;
