@@ -1,0 +1,125 @@
+@import "./fonts";
+
+:root {
+  --main-clr: #656293;
+  --second-clr: #e5f4f6;
+  --font-Poppins: "Poppins";
+  --white-clr: #fff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: var(--font-Poppins);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1180px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.header {
+  position: relative;
+  background: transparent;
+  &__container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+  }
+
+  &__logo {
+  }
+
+  &__menu {
+    display: flex;
+    gap: 20px;
+  }
+  &__li {
+    white-space: nowrap;
+  }
+  &__li a {
+    color: #000;
+  }
+  &__buttons {
+  }
+
+  &__btn {
+  }
+}
+
+.first {
+  &__btn {
+    margin-right: 19px;
+    color: #000;
+  }
+}
+.second {
+  &__btn {
+    background: var(--main-clr);
+    color: var(--white-clr);
+    padding: 5px 23px;
+    border-radius: 5px;
+  }
+}
+.spanCircle {
+  background: #f3f2f2;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+// ----------------banner--------------------
+.banner {
+  min-height: 100vh;
+  background: url(../images/281711c8e933e746f894b4b60304cab7.jfif) center center
+    no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  &__content {
+  }
+  &__hero {
+    display: flex;
+    align-items: center;
+  }
+  &__hero h1 {
+    font-size: 45px;
+    font-weight: 500;
+  }
+  &__span {
+    color: var(--main-clr);
+  }
+
+  &__porthole {
+    width: 260px;
+    height: 320px;
+    border: 3px solid black;
+  }
+}
+.block {
+  position: absolute;
+  z-index: 100;
+}
