@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to bottom, #87ceeb, #f5f5f5);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.booking-form {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+}
+.booking-form header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.booking-form header h1 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+.booking-form form .form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.booking-form form .form-row .form-group {
+  flex: 1;
+}
+.booking-form form .form-row .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+.booking-form form .form-row .form-group input,
+.booking-form form .form-row .form-group select,
+.booking-form form .form-row .form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+.booking-form form .form-row .form-group input:focus,
+.booking-form form .form-row .form-group select:focus,
+.booking-form form .form-row .form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+.booking-form form .form-row .form-group textarea {
+  resize: none;
+}
+.booking-form form .form-row:last-child .form-group {
+  flex: 1;
+}
+.booking-form form .submit-row {
+  justify-content: center;
+}
+.booking-form form .submit-row .submit-btn {
+  width: auto;
+  padding: 0.8rem 1.5rem;
+  background: #3498db;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.booking-form form .submit-row .submit-btn:hover {
+  background: #217dbb;
+}
+
+@media (max-width: 768px) {
+  .booking-form {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+  form .form-row {
+    flex-direction: column;
+  }
+  form .form-row .form-group {
+    flex: 1;
+  }
+}

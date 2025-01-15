@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Air Space</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -16,13 +20,17 @@
             </div>
             <ul class="header__menu">
               <li class="header__li">
-                <a href="#!">Ho<span class="spanCircle">me</span></a>
+                <a href="#!">Home</a>
               </li>
               <li class="header__li"><a href="#!">Booking</a></li>
-              <li class="header__li"><a href="#!">Private Jet</a></li>
-              <li class="header__li"><a href="#!">Specification</a></li>
-              <li class="header__li"><a href="#!">Luxury Charters</a></li>
-              <li class="header__li"><a href="#!">Membership</a></li>
+              <li class="header__li"><a href="#privateJet">Private Jet</a></li>
+              <li class="header__li">
+                <a href="#specification">Specification</a>
+              </li>
+              <li class="header__li">
+                <a href="#luxuryChartes">Luxury Charters</a>
+              </li>
+              <li class="header__li"><a href="#membership">Membership</a></li>
             </ul>
             <div class="header__buttons">
               <a href="" class="header__btn first__btn">Register</a>
@@ -34,10 +42,15 @@
             <div class="container">
               <div class="banner__content">
                 <div class="banner__hero">
-                  <h1>
-                    Enjoy <span class="banner__span">RESERVED</span> <br />
-                    Overhead bin space
-                  </h1>
+                  <div class="banner__text">
+                    <h1>
+                      Enjoy <span class="banner__span">RESERVED</span> <br />
+                      Overhead bin space
+                    </h1>
+                    <a href="#!" class="banner__link"
+                      >Explore Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
                   <div class="banner__porthole"></div>
                 </div>
               </div>
@@ -45,6 +58,392 @@
           </div>
         </div>
       </header>
+      <!-- ------------------------------ -->
+
+      <div class="schedule">
+        <div class="container">
+          <div class="schedule__content">
+            <div class="tap-wrap">
+              <input
+                type="radio"
+                id="tab1"
+                name="tabGroup1"
+                class="tab"
+                checked
+              />
+              <label for="tab1"
+                >Round Trip <i class="fa-solid fa-caret-down"></i
+              ></label>
+
+              <input type="radio" id="tab2" name="tabGroup1" class="tab" />
+              <label for="tab2"
+                >Flight Type <i class="fa-solid fa-caret-down"></i
+              ></label>
+
+              <input type="radio" id="tab3" name="tabGroup1" class="tab" />
+              <label for="tab3"
+                >Crew<i class="fa-solid fa-caret-down"></i
+              ></label>
+
+              <div class="tab__content">
+                <h3 class="flightTitle">Round Trip</h3>
+
+                <div class="schedule__flights">
+                  <div class="schedule__box">
+                    <p>FROM</p>
+                    <h2 class="schedule__place">LAX</h2>
+                    <p>Los Angeles Intl Arpt,Los Angeles</p>
+                  </div>
+                  <div class="schedule__arrows">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  </div>
+                  <div class="schedule__box">
+                    <p>TO</p>
+                    <h2 class="schedule__place">MIA</h2>
+                    <p>Miami Intl,Miami</p>
+                  </div>
+
+                  <div class="schedule__calendar">
+                    <div class="schedule__departure">
+                      <p class="schedule__title">DEPARTURE</p>
+                      <h2>
+                        Fri 15 Oct
+                        <i class="fa-regular fa-calendar-days"></i>
+                      </h2>
+                      <div class="schedule__links">
+                        <a href="#!">Prev</a>
+                        <a href="#!">Next</a>
+                      </div>
+                    </div>
+                    <div class="schedule__return">
+                      <p class="schedule__title">RETURN</p>
+                      <h2>
+                        Tue 19 Oct
+                        <i class="fa-regular fa-calendar-days"></i>
+                      </h2>
+                      <div class="schedule__links">
+                        <a href="#!">Prev</a>
+                        <a href="#!">Next</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab__content">
+                <h3 class="flightTitle">Flight Type</h3>
+                <div class="typeFlight">
+                  <p class="typeFlight__text">
+                    Our company cares about its passengers, and that is why more
+                    comfort is added to each category of our flights. Because
+                    our passengers should feel comfortable and safe. With our
+                    professional crew, you will not have to worry about anything
+                    that could make your flight uncomfortable. This is Air-Spce
+                    International Flights. We are waiting for you.
+                  </p>
+                  <div class="typeFlight__img">
+                    <img src="./images/flight-attendant.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab__content">
+                <h3 class="flightTitle">Crew</h3>
+                <div class="crew">
+                  <div class="crew__img">
+                    <img src="./images/crew.jpg" alt="" />
+                  </div>
+                  <p class="crew__text">
+                    Many clients trust us and always come to us with a smile and
+                    trust. Air-Space is one of the largest private companies
+                    with unique selection rules, which allows us to take the
+                    best pilots from all over the world.
+                    <span class="crew__span">The best of the best</span> . And
+                    we assure you that all pilots and crew are highly qualified.
+                    This shows their many years of experience in aviation in
+                    general.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------------------------------------------------------- -->
+
+            <a href="#!" class="schedule__addRequirements">Add Requirements</a>
+
+            <a href="./fill_out_form/index.html" class="schedule__btn"
+              >Book Flight <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------------------------------------------- -->
+      <div class="privateJet" id="privateJet">
+        <div class="container">
+          <div class="privateJet__content">
+            <h2 class="privateJet__title">
+              Private Jet for Business & Leisure Purposes
+            </h2>
+
+            <div class="privateJet__box">
+              <img
+                src="./images/bd85c411a04a4e4008c35e087ce60bdc.jfif"
+                alt=""
+              />
+              <div class="privateJet__text">
+                <h3>Private Jet Charter</h3>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors
+                </p>
+              </div>
+            </div>
+
+            <div class="privateJet__box2">
+              <div class="privateJet__text">
+                <h3>Business Jet Charter</h3>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors
+                </p>
+              </div>
+
+              <img
+                src="./images/b259cd894932ec3d47b000b49ba690b7.jfif"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------- -->
+
+      <div class="specification" id="specification">
+        <div class="container">
+          <div class="specification__content">
+            <h2 class="specification__title">
+              Private Jet Performance and Specifications
+            </h2>
+            <div class="specification__items">
+              <div class="specification__item1">
+                <div class="specification__box firstChild">
+                  <img src="./images/seat.png" alt="" />
+                  <h3 class="specification__boxTitle">Luxury And Comfort</h3>
+                  <p class="specification__text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable
+                  </p>
+                </div>
+                <div class="specification__box">
+                  <img src="./images/schedule.png" alt="" />
+                  <h3 class="specification__boxTitle">
+                    Personal schedule & booking
+                  </h3>
+                  <p class="specification__text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable
+                  </p>
+                </div>
+              </div>
+              <div class="specification__planeImg">
+                <img src="./images/plane.png" alt="" />
+              </div>
+
+              <div class="specification__item1">
+                <div class="specification__box firstChild">
+                  <img src="./images/web-browser.png" alt="" />
+                  <h3 class="specification__boxTitle">SAFETY AND SECURITY</h3>
+                  <p class="specification__text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable
+                  </p>
+                </div>
+                <div class="specification__box">
+                  <img src="./images/captain.png" alt="" />
+                  <h3 class="specification__boxTitle">EXPERIENCED CREW</h3>
+                  <p class="specification__text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------------------- -->
+      <div class="luxuryChartes">
+        <div class="container">
+          <div class="luxuryChartes__content">
+            <h2 class="luxuryChartes__title">Luxury Chartes</h2>
+            <div class="luxuryChartes__items">
+              <div class="luxuryChartes__airplaneBox">
+                <div class="luxuryChartes__plane">
+                  <img src="./images/plane1.jpg" alt="" />
+                </div>
+                <p class="luxuryChartes__nameOfPlane">Piaggio P.180 Avanti</p>
+              </div>
+              <div class="luxuryChartes__airplaneBox">
+                <div class="luxuryChartes__plane">
+                  <img src="./images/plane2.jpg" alt="" />
+                </div>
+                <p class="luxuryChartes__nameOfPlane">Pilatus PC-12</p>
+              </div>
+              <div class="luxuryChartes__airplaneBox">
+                <div class="luxuryChartes__plane">
+                  <img src="./images/plane3.jpg" alt="" />
+                </div>
+                <p class="luxuryChartes__nameOfPlane">piper pa27 aztec</p>
+              </div>
+              <div class="luxuryChartes__airplaneBox">
+                <div class="luxuryChartes__plane">
+                  <img src="./images/plane4.jpg" alt="" />
+                </div>
+                <p class="luxuryChartes__nameOfPlane">Beech BE100 King Air</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------------ -->
+
+      <div class="membership">
+        <div class="container">
+          <div class="membership__content">
+            <h2 class="membership__title">Enjoy Our Membership</h2>
+            <div class="membership__cards">
+              <div class="membership__card">
+                <h2>Popular</h2>
+                <p class="membership__whatyouget">What You'll Get</p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  One-time initiation fee $0
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Deposit $50k
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Pricing / rates Dynamic
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Priority fleet access Yes
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Guaranteed fleet access No
+                </p>
+
+                <div class="membership__lines">
+                  ---------------------------------
+                </div>
+                <div class="membership__price">
+                  <span>250$</span>
+                  <p>/month</p>
+                </div>
+                <a href="#!" class="membership__btn">Choose</a>
+              </div>
+              <div class="membership__card">
+                <h2>Business</h2>
+                <p class="membership__whatyouget">What You'll Get</p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  One-time initiation fee $0
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Deposit $50k
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Pricing / rates Dynamic
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Priority fleet access Yes
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Guaranteed fleet access No
+                </p>
+
+                <div class="membership__lines">
+                  ---------------------------------
+                </div>
+                <div class="membership__price">
+                  <span>480$</span>
+                  <p>/month</p>
+                </div>
+                <a href="#!" class="membership__btn">Choose</a>
+              </div>
+              <div class="membership__card">
+                <h2>Elite</h2>
+                <p class="membership__whatyouget">What You'll Get</p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  One-time initiation fee $0
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Deposit $50k
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Pricing / rates Dynamic
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Priority fleet access Yes
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Guaranteed fleet access No
+                </p>
+
+                <div class="membership__lines">
+                  ---------------------------------
+                </div>
+                <div class="membership__price">
+                  <span>680$</span>
+                  <p>/month</p>
+                </div>
+                <a href="#!" class="membership__btn">Choose</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------------- -->
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <div class="footer__img">
+              <img src="./images/Group 23.png" alt="" />
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__menu">
+              <ul class="footer__ul">
+                <li class="footer__li"><a href="#!">SERVICES</a></li>
+                <li class="footer__li"><a href="#!">ABOUT US</a></li>
+                <li class="footer__li"><a href="#!">NEWS</a></li>
+                <li class="footer__li"><a href="#!">CONTACT</a></li>
+              </ul>
+              <p>© 2021 Air Space. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="./js/app.js" defer></script>
   </body>

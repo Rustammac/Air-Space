@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fill out your form</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+
+    <div class="booking-form">
+      <header>
+        <h1>Book Your Flight</h1>
+      </header>
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="departure">From:</label>
+            <input
+              type="text"
+              id="departure"
+              placeholder="Enter departure city/airport"
+            />
+          </div>
+          <div class="form-group">
+            <label for="arrival">To:</label>
+            <input
+              type="text"
+              id="arrival"
+              placeholder="Enter arrival city/airport"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date" />
+          </div>
+          <div class="form-group">
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="travelers">Travelers:</label>
+            <input
+              type="number"
+              id="travelers"
+              min="1"
+              placeholder="Number of travelers"
+            />
+          </div>
+          <div class="form-group">
+            <label for="class">Class:</label>
+            <select id="class">
+              <option value="economy">Economy</option>
+              <option value="business">Business</option>
+              <option value="first-class">First Class</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="requests">Special Requests:</label>
+            <textarea
+              id="requests"
+              rows="2"
+              placeholder="Any special requests?"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-row submit-row">
+          <button type="submit" class="submit-btn">Search Flights</button>
+        </div>
+      </form>
+    </div>
+
+   
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

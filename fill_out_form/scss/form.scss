@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Variables
+$font-stack: "Roboto", sans-serif;
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$background-gradient: linear-gradient(to bottom, #87ceeb, #f5f5f5);
+$border-radius: 10px;
+$box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+$gap: 1rem;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+// Mixin for input styles
+@mixin input-style {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: $border-radius;
+  font-size: 1rem;
+  color: $secondary-color;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+    box-shadow: 0 0 5px rgba($primary-color, 0.5);
+  }
+}
+
+// Global styles
+body {
+  font-family: $font-stack;
+  background: $background-gradient;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+// Booking Form Styles
+.booking-form {
+  background: #fff;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+
+  header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    h1 {
+      font-size: 1.8rem;
+      color: $secondary-color;
+    }
+  }
+
+  form {
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      gap: $gap;
+      margin-bottom: $gap;
+
+      .form-group {
+        flex: 1;
+
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-weight: bold;
+          color: $secondary-color;
+        }
+
+        input,
+        select,
+        textarea {
+          @include input-style;
+        }
+
+        textarea {
+          resize: none;
+        }
+      }
+
+      // Adjust column widths for grouped fields
+      &:last-child {
+        .form-group {
+          flex: 1;
+        }
+      }
+    }
+
+    .submit-row {
+      justify-content: center;
+
+      .submit-btn {
+        width: auto;
+        padding: 0.8rem 1.5rem;
+        background: $primary-color;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: $border-radius;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+          background: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+  .booking-form {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  form {
+    .form-row {
+      flex-direction: column;
+
+      .form-group {
+        flex: 1;
+      }
+    }
+  }
+}
