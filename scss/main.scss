@@ -275,6 +275,7 @@ li {
     white-space: nowrap;
     color: #000;
     text-decoration: underline;
+    font-size: 90%;
   }
   &__calendar {
     display: flex;
@@ -309,8 +310,9 @@ li {
     color: #fff;
     border-radius: 10px;
     position: absolute;
-    margin-top: 15px;
-    margin-left: 390px;
+    margin-top: 17px;
+    margin-left: 20%;
+    white-space: nowrap;
   }
   &__btn i {
     margin-left: 30px;
@@ -877,7 +879,6 @@ label i {
       box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
       border: 1px solid #ccc;
       padding: 10px 16px;
-      // gap: 40px;
     }
     &__calendar {
       display: flex;
@@ -886,7 +887,6 @@ label i {
       border: 1px solid #ccc;
       padding: 10px 16px;
       gap: 40px;
-      // margin-left: 30px;
     }
     &__departure > h2 {
       font-size: 15px;
@@ -900,6 +900,47 @@ label i {
     &__return h2 {
       font-size: 14px;
       margin-bottom: 10px;
+    }
+  }
+
+  .crew {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    &__img img {
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    &__text {
+      line-height: 2;
+      letter-spacing: 1.5px;
+    }
+
+    &__span {
+      color: #656293;
+    }
+  }
+
+  .typeFlight {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 20px;
+    &__text {
+      line-height: 2;
+      letter-spacing: 1.5px;
+    }
+
+    &__img img {
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px;
     }
   }
   .footer {

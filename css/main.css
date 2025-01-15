@@ -293,6 +293,7 @@ li {
   white-space: nowrap;
   color: #000;
   text-decoration: underline;
+  font-size: 90%;
 }
 .schedule__calendar {
   display: flex;
@@ -324,8 +325,9 @@ li {
   color: #fff;
   border-radius: 10px;
   position: absolute;
-  margin-top: 15px;
-  margin-left: 390px;
+  margin-top: 17px;
+  margin-left: 20%;
+  white-space: nowrap;
 }
 .schedule__btn i {
   margin-left: 30px;
@@ -868,6 +870,44 @@ label i {
   .schedule__return h2 {
     font-size: 14px;
     margin-bottom: 10px;
+  }
+  .crew {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .crew__img img {
+    width: 400px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 20px;
+  }
+  .crew__text {
+    line-height: 2;
+    letter-spacing: 1.5px;
+  }
+  .crew__span {
+    color: #656293;
+  }
+  .typeFlight {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 20px;
+  }
+  .typeFlight__text {
+    line-height: 2;
+    letter-spacing: 1.5px;
+  }
+  .typeFlight__img img {
+    width: 400px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 20px;
   }
   .footer {
     width: 100%;
